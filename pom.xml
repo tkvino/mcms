@@ -135,7 +135,12 @@
 		<profile>
 			<id>openshift</id>
 			<dependencies>
-				<!-- TODO: ADD PostgreSQL database dependency here -->
+				<dependency>
+					<groupId>org.postgresql</groupId>
+					<artifactId>postgresql</artifactId>
+					<version>${postgresql.version}</version>
+					<scope>runtime</scope>
+				</dependency>
 			</dependencies>
 			<build>
 				<plugins>
